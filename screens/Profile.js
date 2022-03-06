@@ -16,6 +16,7 @@ import {
     dummyData,
     FONTS,
     icons,
+    images,
     SIZES
 } from '../constants'
 
@@ -92,7 +93,7 @@ const Profile = () => {
                         <Text style={styles.collegeDetails}>{department} - {batch}</Text>
                     </View>
                     <View>
-                        <Image style={styles.profilePic} source={icons.profile} />
+                        <Image style={styles.profilePic} source={images.profile} />
                     </View>
                 </View>
 

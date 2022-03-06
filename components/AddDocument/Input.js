@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     field: {
         backgroundColor: COLORS.white,
         paddingHorizontal: SIZES.body3,
-        paddingVertical: 5,
+        paddingVertical: 8,
         marginTop: SIZES.inp3,
         borderColor: COLORS.turquoise,
         borderWidth: 0.5,

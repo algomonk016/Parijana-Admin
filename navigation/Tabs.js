@@ -1,6 +1,7 @@
 import React from "react";
 import {
     View,
+    Platform
 } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { AddDocument, Explore, Home, Profile } from '../screens'
@@ -23,7 +24,7 @@ const Tabs = () => {
                     elevation: 5,
                     backgroundColor: COLORS.white,
                     borderTopColor: COLORS.transparent,
-                    height: 60,
+                    height: Platform.OS === "ios" ? 70 : 60,
                 },
             }}
         >
@@ -32,7 +33,6 @@ const Tabs = () => {
                 component={Home}
                 options={{
                     tabBarIcon: ({focused}) => <TabIcon focused = {focused} icon = {icons.home} />,
-                    tabBarBadge: 3
                 }}
             />
             <Tab.Screen
@@ -53,7 +53,8 @@ const Tabs = () => {
                 name={tabs.PROFILE}
                 component={Profile}
                 options={{
-                    tabBarIcon: ({focused}) => <TabIcon focused = {focused} icon = {icons.profile} />
+                    tabBarIcon: ({focused}) => <TabIcon focused = {focused} icon = {icons.profile} />,
+                    tabBarBadge: 3
                 }}
             />
         </Tab.Navigator>
