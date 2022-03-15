@@ -11,8 +11,6 @@ import {
     StyleSheet,
     ScrollView,
 } from 'react-native'
-// import { pick } from 'react-native-document-picker'
-// import { add } from 'react-native-reanimated'
 import {
     CustomButton,
     CustomDropdown,
@@ -23,7 +21,8 @@ import {
     COLORS,
     FONTS,
     SIZES,
-    actions
+    actions,
+    tabs
 } from '../constants'
 import {
     dummyData
@@ -159,7 +158,7 @@ const AddDocument = ({ navigation }) => {
                 <View style={styles.header}>
                     <Text style={styles.heading}>Upload file</Text>
 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate(tabs.CAMERA_SCREEN)}>
                         <Text style={styles.link}>Scan Files</Text>
                     </TouchableOpacity>
                 </View>

@@ -8,7 +8,6 @@ import {
 import { tabs } from '../constants'
 
 const Register = ({ navigation }) => {
-    console.log('tabs is', tabs)
     return (
         <View>
             <Text>This is Register</Text>

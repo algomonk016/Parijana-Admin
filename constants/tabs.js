@@ -6,6 +6,7 @@ const REGISTER = 'REGISTER'
 const APP = 'APP'
 const SEARCH = 'SEARCH'
 const ADD_MULTIPLE_FILES = 'ADD_MULTIPLE_FILES'
+const CAMERA_SCREEN = 'CAMERA_SCREEN'
 
 export default {
     ADD_PAPERS,
@@ -16,4 +17,5 @@ export default {
     APP,
     SEARCH,
     ADD_MULTIPLE_FILES,
+    CAMERA_SCREEN
 }

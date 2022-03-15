@@ -14,7 +14,8 @@ import {
   Home,
   AddDocument,
   Login,
-  Register
+  Register,
+  CameraScreen
 } from './screens'
 import { tabs } from './constants'
 import Tabs from './navigation/Tabs';
@@ -51,6 +52,10 @@ const App = () => {
         <Stack.Screen
           name={tabs.REGISTER}
           component={Register}
+        />
+        <Stack.Screen
+          name={tabs.CAMERA_SCREEN}
+          component={CameraScreen}
         />
         <Stack.Screen
           name={tabs.APP}
