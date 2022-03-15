@@ -75,8 +75,8 @@ export const FONTS = {
     roboto: { fontFamily: "Roboto-Black" },
     playfair: { fontFamily: "Playfair" },
     coldiac: { fontFamily: "Playfair" },
-    // juana: { fontFamily: "Juana", letterSpacing: 0.50, },
-    juana: { fontFamily: "Roboto-Black", letterSpacing: 0.50, },
+    juana: { fontFamily: "Juana", letterSpacing: 0.50, },
+    // juana: { fontFamily: "Roboto-Black", letterSpacing: 0.50, },
 };
 
 const appTheme = { FONTS, SIZES, COLORS }

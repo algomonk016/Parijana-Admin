@@ -4,13 +4,17 @@ import {
     Text,
     SafeAreaView
 } from 'react-native'
+import { RNCamera } from "react-native-camera";
+import CameraScreen from "../components/CameraScreen";
 
 const Explore = () => {
     return (
         <SafeAreaView>
-            <View>
+            {/* <View>
                 <Text>this is explore</Text>
-            </View>
+            </View> */}
+
+            <CameraScreen />
         </SafeAreaView>
     )
 }
