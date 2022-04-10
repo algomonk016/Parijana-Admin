@@ -1,0 +1,21 @@
+const ADD_PAPERS = 'ADD_PAPERS'
+const HOME = 'HOME'
+const PROFILE = 'PROFILE'
+const LOGIN = 'LOGIN'
+const REGISTER = 'REGISTER'
+const APP = 'APP'
+const SEARCH = 'SEARCH'
+const ADD_MULTIPLE_FILES = 'ADD_MULTIPLE_FILES'
+const CAMERA_SCREEN = 'CAMERA_SCREEN'
+
+export default {
+    ADD_PAPERS,
+    HOME,
+    PROFILE,
+    LOGIN,
+    REGISTER,
+    APP,
+    SEARCH,
+    ADD_MULTIPLE_FILES,
+    CAMERA_SCREEN
+}
