@@ -1,16 +1,22 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text, Button, View, SafeAreaView } from 'react-native';
-import {
-  Explore,
-  Home
-} from './src/screens/'
+import { 
+  StyleSheet, 
+  Text, 
+  Button, 
+  View, 
+} from 'react-native';
+import { Provider } from 'react-redux'
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import AppRoute from './src/navigation/navigator';
+import { store } from './src/redux/store'
 
 // const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+
 
 export default function App() {
   return (
@@ -26,11 +32,12 @@ export default function App() {
     //     <Tab.Screen name="Explore" component={Explore} />
     //   </Tab.Navigator>
     // </NavigationContainer>
-    <SafeAreaView style={styles.container}>
-      <Text>
-        will be working on login
-      </Text>
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <Provider store={store}>
+        <AppRoute />
+        <StatusBar style='auto' />
+      </Provider>
+    </SafeAreaProvider>
   );
 }
 
