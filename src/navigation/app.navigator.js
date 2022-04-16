@@ -8,6 +8,10 @@ import {
   Explore
 } from '../screens'
 
+import Tabs from './tabs.navigator'
+
+import { tabs } from '../constants'
+
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
@@ -16,9 +20,9 @@ const AppNavigator = () => {
       screenOptions={{
         headerShown: false
       }}
-      initialRouteName='Dashboard'>
-      <Stack.Screen name="Dashboard" component={Home} />
-      <Stack.Screen name="Explore" component={Explore} />
+      initialRouteName={tabs.APP}>
+      <Stack.Screen name={tabs.APP} component={Tabs} />
+      {/*<Stack.Screen name={tabs.EXPLORE} component={Explore} /> */}
     </Stack.Navigator>
   )
 }

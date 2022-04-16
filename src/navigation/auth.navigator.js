@@ -6,18 +6,19 @@ import {
   Login,
   Register
 } from '../screens'
+import { tabs } from '../constants'
 
 const Stack = createNativeStackNavigator()
 
 const AuthNavigator = () => {
   return (
     <Stack.Navigator
-    screenOptions={{
-      headerShown: false
-    }}
-     initialRouteName='Login'>
-      <Stack.Screen name='Login' component={Login} />
-      <Stack.Screen name='Register' component={Register} />
+      screenOptions={{
+        headerShown: false
+      }}
+      initialRouteName={tabs.LOGIN}>
+      <Stack.Screen name={tabs.LOGIN} component={Login} />
+      <Stack.Screen name={tabs.REGISTER} component={Register} />
     </Stack.Navigator>
   )
 }
