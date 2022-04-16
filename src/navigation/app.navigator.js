@@ -4,8 +4,8 @@ import {
 } from '@react-navigation/native-stack'
 
 import {
-  Home,
-  Explore
+  Camera,
+  Processing
 } from '../screens'
 
 import Tabs from './tabs.navigator'
@@ -22,6 +22,8 @@ const AppNavigator = () => {
       }}
       initialRouteName={tabs.APP}>
       <Stack.Screen name={tabs.APP} component={Tabs} />
+      <Stack.Screen name={tabs.CAMERA_SCREEN} component={Camera} />
+      <Stack.Screen name={tabs.PROCESSING} component={Processing} />
       {/*<Stack.Screen name={tabs.EXPLORE} component={Explore} /> */}
     </Stack.Navigator>
   )

@@ -8,6 +8,7 @@ const SEARCH = 'Search'
 const ADD_MULTIPLE_FILES = 'AddMultileFiles'
 const CAMERA_SCREEN = 'CameraScreen'
 const EXPLORE = 'Explore'
+const PROCESSING = 'Processing'
 
 export default {
     ADD_PAPERS,
@@ -20,4 +21,5 @@ export default {
     ADD_MULTIPLE_FILES,
     CAMERA_SCREEN,
     EXPLORE,
+    PROCESSING
 }
