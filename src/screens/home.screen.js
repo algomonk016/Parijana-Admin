@@ -14,6 +14,7 @@ import { setSignOut } from '../redux/slices/authSlice'
 import {
   icons,
   COLORS,
+  tabs,
 } from '../constants/'
 
 import {
@@ -48,7 +49,7 @@ const Home = ({ navigation }) => {
           alignItems: 'flex-start',
         }]}>
           <Text style = {styles.text}> Have any document to upload </Text>
-          <TouchableButton buttonProps = {{ onPress: () => navigation.navigate('Explore')  }} text = {'Add Document'} type = {1} />
+          <TouchableButton buttonProps = {{ onPress: () => navigation.navigate(tabs.EXPLORE)  }} text = {'Add Document'} type = {1} />
         </View>
 
         {/* recent uploads of uesr, with their ratings */}
@@ -68,7 +69,8 @@ const Home = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingTop: 20,
   }, 
   viewContainer: {
     flexDirection: 'row',

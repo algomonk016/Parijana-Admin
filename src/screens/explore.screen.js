@@ -5,6 +5,7 @@ import {
   Button
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { tabs } from '../constants'
 
 const Explore = ({ navigation }) => {
   return(
@@ -12,7 +13,7 @@ const Explore = ({ navigation }) => {
       <Text>Explore Screen</Text>
       <Button
         title="Show me the Home screen"
-        onPress={() => navigation.navigate('Dashboard')}
+        onPress={() => navigation.navigate(tabs.HOME)}
       />
     </SafeAreaView>
   )

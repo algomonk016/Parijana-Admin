@@ -1,12 +1,13 @@
-const ADD_PAPERS = 'ADD_PAPERS'
-const HOME = 'HOME'
-const PROFILE = 'PROFILE'
-const LOGIN = 'LOGIN'
-const REGISTER = 'REGISTER'
-const APP = 'APP'
-const SEARCH = 'SEARCH'
-const ADD_MULTIPLE_FILES = 'ADD_MULTIPLE_FILES'
-const CAMERA_SCREEN = 'CAMERA_SCREEN'
+const ADD_PAPERS = 'AddPapers'
+const HOME = 'Dashboard'
+const PROFILE = 'Profile'
+const LOGIN = 'Login'
+const REGISTER = 'Register'
+const APP = 'App'
+const SEARCH = 'Search'
+const ADD_MULTIPLE_FILES = 'AddMultileFiles'
+const CAMERA_SCREEN = 'CameraScreen'
+const EXPLORE = 'Explore'
 
 export default {
     ADD_PAPERS,
@@ -17,5 +18,6 @@ export default {
     APP,
     SEARCH,
     ADD_MULTIPLE_FILES,
-    CAMERA_SCREEN
+    CAMERA_SCREEN,
+    EXPLORE,
 }
