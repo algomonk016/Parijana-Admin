@@ -12,7 +12,7 @@ const Explore = ({ navigation }) => {
       <Text>Explore Screen</Text>
       <Button
         title="Show me the Home screen"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('Dashboard')}
       />
     </SafeAreaView>
   )

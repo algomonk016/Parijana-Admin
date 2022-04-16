@@ -11,6 +11,7 @@ const pdf = require("../assets/icons/pdficon.png")
 const quote = require("../assets/icons/quote1.png")
 const done = require("../assets/icons/profile.jpeg")
 const close = require("../assets/icons/settings.png")
+const logout = require("../assets/icons/logout.png")
 
 /*TODO: done icon and close icon*/ 
 
@@ -27,4 +28,5 @@ export default {
     profile,
     pdf,
     quote,
+    logout,
 }
