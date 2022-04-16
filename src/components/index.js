@@ -5,3 +5,6 @@ export { default as TabIcon } from './common/tabicon.component'
 
 // home
 export { default as RecentUploads } from './home/uploads.component'
+
+// profile
+export { default as Carousel } from './profile/carousel.component'
