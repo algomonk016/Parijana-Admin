@@ -31,7 +31,7 @@ const Home = ({ navigation }) => {
 
   return(
     <SafeAreaView edges={['top', 'left', 'right']} style = {styles.container}>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {/* welcome container */}
         <View style = {styles.viewContainer}>
           <Text style = {styles.text}>Hey, <Text style = {styles.name}>Shivesh</Text></Text>
