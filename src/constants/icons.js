@@ -12,6 +12,9 @@ const quote = require("../assets/icons/quote1.png")
 const done = require("../assets/icons/profile.jpeg")
 const close = require("../assets/icons/settings.png")
 const logout = require("../assets/icons/logout.png")
+const flipCamera = require('../assets/icons/flip-camera.png')
+const gallery = require('../assets/icons/gallery.png')
+const trash = require('../assets/icons/trash.png')
 
 /*TODO: done icon and close icon*/ 
 
@@ -29,4 +32,7 @@ export default {
     pdf,
     quote,
     logout,
+    flipCamera,
+    gallery,
+    trash,
 }
