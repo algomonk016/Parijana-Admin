@@ -114,13 +114,15 @@ export default function CameraApp({ navigation }) {
           {
             text: "Na, aise hi thik hai",
             onPress: () => navigation.navigate(tabs.PROCESSING, {
-              processImage: false
+              processImage: false,
+              imagesCaptured
             }),
             style: "cancel"
           },
           {
             text: "OK", onPress: () => navigation.navigate(tabs.PROCESSING, {
-              processImage: true
+              processImage: true,
+              imagesCaptured
             })
           }
         ]
